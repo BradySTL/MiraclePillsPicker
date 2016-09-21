@@ -101,7 +101,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="non-KL-s6a">
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="non-KL-s6a">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="FBo-hV-j3y"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="VWn-Qm-PQv"/>
