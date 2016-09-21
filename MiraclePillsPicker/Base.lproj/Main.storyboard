@@ -101,7 +101,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="non-KL-s6a">
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="non-KL-s6a">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="FBo-hV-j3y"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="VWn-Qm-PQv"/>
@@ -114,6 +114,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Choose Your State"/>
+                                <connections>
+                                    <action selector="stateBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2sI-au-war"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -153,6 +156,10 @@
                             <constraint firstItem="non-KL-s6a" firstAttribute="leading" secondItem="Rim-Vn-vd5" secondAttribute="leading" id="xLR-tk-ul5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="statePicker" destination="non-KL-s6a" id="0wm-Op-QML"/>
+                        <outlet property="statePickerBtn" destination="FAI-Kx-7GC" id="opy-xV-elV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
