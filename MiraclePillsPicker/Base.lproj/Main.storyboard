@@ -134,10 +134,18 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGA-cp-Bhi">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="0Vv-zX-4l3"/>
+                                    <constraint firstAttribute="height" constant="45" id="q1x-EN-rCQ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="buyNowBtn"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Arn-9X-Gq9" firstAttribute="trailing" secondItem="Clm-Oo-h8k" secondAttribute="trailing" id="1dy-oP-sdT"/>
+                            <constraint firstItem="GGA-cp-Bhi" firstAttribute="top" secondItem="non-KL-s6a" secondAttribute="bottom" constant="20" id="1vA-eC-Len"/>
                             <constraint firstItem="OMc-HZ-ijg" firstAttribute="leading" secondItem="jxL-HL-4EC" secondAttribute="leading" id="3Vn-qp-pe6"/>
                             <constraint firstItem="wrY-1N-Z2S" firstAttribute="top" secondItem="Arn-9X-Gq9" secondAttribute="bottom" constant="8" id="57q-wO-XLD"/>
                             <constraint firstItem="Arn-9X-Gq9" firstAttribute="leading" secondItem="Clm-Oo-h8k" secondAttribute="leading" id="8WT-rX-pV3"/>
@@ -166,6 +174,7 @@
                             <constraint firstItem="cEQ-Ii-aUc" firstAttribute="trailing" secondItem="OMc-HZ-ijg" secondAttribute="trailing" id="gwi-8H-t72"/>
                             <constraint firstItem="aa9-e3-Z3f" firstAttribute="top" secondItem="0cu-nK-R1Y" secondAttribute="bottom" constant="10" id="hfG-en-UaR"/>
                             <constraint firstItem="aa9-e3-Z3f" firstAttribute="centerX" secondItem="0cu-nK-R1Y" secondAttribute="centerX" id="i2V-GO-TGA"/>
+                            <constraint firstItem="GGA-cp-Bhi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i8D-Ku-fhC"/>
                             <constraint firstItem="jxL-HL-4EC" firstAttribute="leading" secondItem="Rur-q6-Wf9" secondAttribute="leading" id="iNq-Ym-bM1"/>
                             <constraint firstItem="dbL-ZV-hUr" firstAttribute="top" secondItem="Arn-9X-Gq9" secondAttribute="bottom" constant="8" id="jjX-4X-Goo"/>
                             <constraint firstItem="cEQ-Ii-aUc" firstAttribute="top" secondItem="OMc-HZ-ijg" secondAttribute="bottom" constant="8" id="kF8-tL-mab"/>
@@ -178,6 +187,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="hideBtn1" destination="dbL-ZV-hUr" id="u4O-k9-hdA"/>
+                        <outlet property="hideBtn2" destination="wrY-1N-Z2S" id="t94-JS-PY0"/>
                         <outlet property="statePicker" destination="non-KL-s6a" id="0wm-Op-QML"/>
                         <outlet property="statePickerBtn" destination="FAI-Kx-7GC" id="opy-xV-elV"/>
                     </connections>
@@ -188,6 +199,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="buyNowBtn" width="225" height="45"/>
         <image name="miraclePillEmoji" width="90" height="90"/>
     </resources>
 </document>

@@ -12,6 +12,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 
     @IBOutlet weak var statePicker: UIPickerView!
     @IBOutlet weak var statePickerBtn: UIButton!
+    @IBOutlet weak var hideBtn1: UITextField!
+    @IBOutlet weak var hideBtn2: UITextField!
+    
     
     let states = [ "AK - Alaska",
                    "AL - Alabama",
@@ -83,6 +86,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 
     @IBAction func stateBtnPressed(_ sender: AnyObject) {
         statePicker.isHidden = false
+        hideBtn1.isHidden = true
+        hideBtn2.isHidden = true
     }
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -98,6 +103,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         statePickerBtn.setTitle(states[row], for: UIControlState.normal)
         statePicker.isHidden = true
+        hideBtn1.isHidden = false
+        hideBtn2.isHidden = false
     }
 }
 
