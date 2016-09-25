@@ -109,7 +109,6 @@
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAI-Kx-7GC">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="146" id="Ctn-QL-rym"/>
                                     <constraint firstAttribute="height" constant="30" id="JRF-TF-hfz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
@@ -148,6 +147,10 @@
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCd-Lm-rhs">
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Start New Order"/>
+                                <connections>
+                                    <action selector="buyNowBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hbh-dR-scl"/>
+                                    <action selector="startNewOrderPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kLR-53-vVH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -177,6 +180,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Rur-q6-Wf9" secondAttribute="trailing" constant="20" id="YBp-Cm-OlT"/>
                             <constraint firstItem="HEc-F2-GHn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YZd-i2-LUU"/>
                             <constraint firstItem="0cu-nK-R1Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="cUt-Kt-zxa"/>
+                            <constraint firstItem="FAI-Kx-7GC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="ci9-1r-Pfs"/>
                             <constraint firstItem="wrY-1N-Z2S" firstAttribute="trailing" secondItem="Arn-9X-Gq9" secondAttribute="trailing" id="fjy-84-kdi"/>
                             <constraint firstItem="FAI-Kx-7GC" firstAttribute="leading" secondItem="Rim-Vn-vd5" secondAttribute="leading" id="g1n-Ff-f1E"/>
                             <constraint firstItem="Fly-Nq-lfk" firstAttribute="top" secondItem="cEQ-Ii-aUc" secondAttribute="bottom" constant="8" id="gIk-df-0Zx"/>
@@ -184,6 +188,7 @@
                             <constraint firstItem="lCd-Lm-rhs" firstAttribute="top" secondItem="HEc-F2-GHn" secondAttribute="bottom" constant="8" id="gTD-xa-6C0"/>
                             <constraint firstItem="cEQ-Ii-aUc" firstAttribute="trailing" secondItem="OMc-HZ-ijg" secondAttribute="trailing" id="gwi-8H-t72"/>
                             <constraint firstItem="lCd-Lm-rhs" firstAttribute="centerX" secondItem="HEc-F2-GHn" secondAttribute="centerX" id="hbL-Vc-W4Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FAI-Kx-7GC" secondAttribute="trailing" constant="20" id="hba-Pz-cjT"/>
                             <constraint firstItem="aa9-e3-Z3f" firstAttribute="top" secondItem="0cu-nK-R1Y" secondAttribute="bottom" constant="10" id="hfG-en-UaR"/>
                             <constraint firstItem="aa9-e3-Z3f" firstAttribute="centerX" secondItem="0cu-nK-R1Y" secondAttribute="centerX" id="i2V-GO-TGA"/>
                             <constraint firstItem="GGA-cp-Bhi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i8D-Ku-fhC"/>
