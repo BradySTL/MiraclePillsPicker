@@ -122,6 +122,24 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         startNewOrderBtn.isHidden = false
     }
     
+    @IBAction func startNewOrderPressed(_ sender: AnyObject) {
+        buyNowBtn.isHidden = false
+        fullNameLbl.isHidden = false
+        fullNameTxt.isHidden = false
+        streetAddressLbl.isHidden = false
+        streetAddressTxt.isHidden = false
+        cityLbl.isHidden = false
+        cityTxt.isHidden = false
+        hideBtn1.isHidden = false
+        hideBtn2.isHidden = false
+        stateLbl.isHidden = false
+        statePickerBtn.isHidden = false
+        statePicker.isHidden = false
+        successImg.isHidden = true
+        startNewOrderBtn.isHidden = true
+    }
+    
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
