@@ -144,7 +144,11 @@
                                     <action selector="buyNowBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4R9-Nl-uFK"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="HEc-F2-GHn"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="HEc-F2-GHn"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCd-Lm-rhs">
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Start New Order"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -177,7 +181,9 @@
                             <constraint firstItem="FAI-Kx-7GC" firstAttribute="leading" secondItem="Rim-Vn-vd5" secondAttribute="leading" id="g1n-Ff-f1E"/>
                             <constraint firstItem="Fly-Nq-lfk" firstAttribute="top" secondItem="cEQ-Ii-aUc" secondAttribute="bottom" constant="8" id="gIk-df-0Zx"/>
                             <constraint firstItem="Fly-Nq-lfk" firstAttribute="trailing" secondItem="cEQ-Ii-aUc" secondAttribute="trailing" id="gJX-lb-91n"/>
+                            <constraint firstItem="lCd-Lm-rhs" firstAttribute="top" secondItem="HEc-F2-GHn" secondAttribute="bottom" constant="8" id="gTD-xa-6C0"/>
                             <constraint firstItem="cEQ-Ii-aUc" firstAttribute="trailing" secondItem="OMc-HZ-ijg" secondAttribute="trailing" id="gwi-8H-t72"/>
+                            <constraint firstItem="lCd-Lm-rhs" firstAttribute="centerX" secondItem="HEc-F2-GHn" secondAttribute="centerX" id="hbL-Vc-W4Z"/>
                             <constraint firstItem="aa9-e3-Z3f" firstAttribute="top" secondItem="0cu-nK-R1Y" secondAttribute="bottom" constant="10" id="hfG-en-UaR"/>
                             <constraint firstItem="aa9-e3-Z3f" firstAttribute="centerX" secondItem="0cu-nK-R1Y" secondAttribute="centerX" id="i2V-GO-TGA"/>
                             <constraint firstItem="GGA-cp-Bhi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i8D-Ku-fhC"/>
@@ -200,11 +206,13 @@
                         <outlet property="fullNameTxt" destination="OMc-HZ-ijg" id="itb-v4-dhn"/>
                         <outlet property="hideBtn1" destination="dbL-ZV-hUr" id="u4O-k9-hdA"/>
                         <outlet property="hideBtn2" destination="wrY-1N-Z2S" id="t94-JS-PY0"/>
+                        <outlet property="startNewOrderBtn" destination="lCd-Lm-rhs" id="FEn-AD-Glu"/>
                         <outlet property="stateLbl" destination="Rim-Vn-vd5" id="WyK-v4-bVp"/>
                         <outlet property="statePicker" destination="non-KL-s6a" id="0wm-Op-QML"/>
                         <outlet property="statePickerBtn" destination="FAI-Kx-7GC" id="opy-xV-elV"/>
                         <outlet property="streetAddressLbl" destination="cEQ-Ii-aUc" id="ixA-zY-Eda"/>
                         <outlet property="streetAddressTxt" destination="Fly-Nq-lfk" id="Nn3-Bm-YZ7"/>
+                        <outlet property="successImg" destination="HEc-F2-GHn" id="fIr-8o-We7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

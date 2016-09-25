@@ -21,6 +21,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var cityLbl: UILabel!
     @IBOutlet weak var cityTxt: UITextField!
     @IBOutlet weak var stateLbl: UILabel!
+    @IBOutlet weak var successImg: UIImageView!
+    @IBOutlet weak var startNewOrderBtn: UIButton!
     
     
     
@@ -116,6 +118,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         stateLbl.isHidden = true
         statePickerBtn.isHidden = true
         statePicker.isHidden = true
+        successImg.isHidden = false
+        startNewOrderBtn.isHidden = false
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
