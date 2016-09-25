@@ -14,6 +14,20 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var statePickerBtn: UIButton!
     @IBOutlet weak var hideBtn1: UITextField!
     @IBOutlet weak var hideBtn2: UITextField!
+    @IBOutlet weak var fullNameLbl: UILabel!
+    @IBOutlet weak var fullNameTxt: UITextField!
+    @IBOutlet weak var streetAddressLbl: UILabel!
+    @IBOutlet weak var streetAddressTxt: UITextField!
+    @IBOutlet weak var cityLbl: UILabel!
+    @IBOutlet weak var cityTxt: UITextField!
+    @IBOutlet weak var stateLbl: UILabel!
+    
+    
+    
+    
+    @IBOutlet weak var buyNowBtn: UIButton!
+    
+    
     
     
     let states = [ "AK - Alaska",
@@ -89,7 +103,21 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         hideBtn1.isHidden = true
         hideBtn2.isHidden = true
     }
-
+    @IBAction func buyNowBtnPressed(_ sender: UIButton) {
+        buyNowBtn.isHidden = true
+        fullNameLbl.isHidden = true
+        fullNameTxt.isHidden = true
+        streetAddressLbl.isHidden = true
+        streetAddressTxt.isHidden = true
+        cityLbl.isHidden = true
+        cityTxt.isHidden = true
+        hideBtn1.isHidden = true
+        hideBtn2.isHidden = true
+        stateLbl.isHidden = true
+        statePickerBtn.isHidden = true
+        statePicker.isHidden = true
+    }
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
